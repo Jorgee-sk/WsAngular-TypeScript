@@ -1,64 +1,5 @@
-class Equipo {
+class Historial {
     constructor() {
-        this._id = 0;
-        this._nombre = "";
-        this._dFundacion = "";
-    }
-    get id() {
-        return this._id;
-    }
-    set id(value) {
-        this._id = value;
-    }
-    get nombre() {
-        return this._nombre;
-    }
-    set nombre(value) {
-        this._nombre = value;
-    }
-    get dFundacion() {
-        return this._dFundacion;
-    }
-    set dFundacion(value) {
-        this._dFundacion = value;
-    }
-}
-class Jugador extends Equipo {
-    constructor() {
-        super();
-        this._idJugador = 0;
-        this._nombreJugador = "";
-        this._edad = 18;
-        this._pais = "";
-    }
-    get idJugador() {
-        return this._idJugador;
-    }
-    set idJugador(value) {
-        this._idJugador = value;
-    }
-    get nombreJugador() {
-        return this._nombreJugador;
-    }
-    set nombreJugador(value) {
-        this._nombreJugador = value;
-    }
-    get edad() {
-        return this._edad;
-    }
-    set edad(value) {
-        this._edad = value;
-    }
-    get pais() {
-        return this._pais;
-    }
-    set pais(value) {
-        this._pais = value;
-    }
-}
-class Historial extends Jugador {
-    constructor() {
-        super();
         this._idHist = 0;
         this._nGoles = 0;
         this._nTarjetasA = 0;
@@ -102,3 +43,96 @@ class Historial extends Jugador {
         this._nTarjetasA += 1;
     }
 }
+class Jugador {
+    constructor() {
+        this._idJugador = 0;
+        this._nombreJugador = "";
+        this._edad = 18;
+        this._pais = "";
+        this._historial = new Historial();
+    }
+    get idJugador() {
+        return this._idJugador;
+    }
+    set idJugador(value) {
+        this._idJugador = value;
+    }
+    get nombreJugador() {
+        return this._nombreJugador;
+    }
+    set nombreJugador(value) {
+        this._nombreJugador = value;
+    }
+    get edad() {
+        return this._edad;
+    }
+    set edad(value) {
+        this._edad = value;
+    }
+    get pais() {
+        return this._pais;
+    }
+    set pais(value) {
+        this._pais = value;
+    }
+    get historial() {
+        return this._historial;
+    }
+    set historial(value) {
+        this._historial = value;
+    }
+}
+class Equipo {
+    constructor() {
+        this._id = 0;
+        this._nombre = "";
+        this._dFundacion = new Date();
+        this._jugadores = [];
+    }
+    get id() {
+        return this._id;
+    }
+    set id(value) {
+        this._id = value;
+    }
+    get nombre() {
+        return this._nombre;
+    }
+    set nombre(value) {
+        this._nombre = value;
+    }
+    get dFundacion() {
+        return this._dFundacion;
+    }
+    set dFundacion(value) {
+        this._dFundacion = value;
+    }
+    get jugadores() {
+        return this._jugadores;
+    }
+    set jugadores(value) {
+        this._jugadores = value;
+    }
+    añadirJugador(value) {
+        this._jugadores.push(value);
+    }
+    eliminarJugador() {
+        this._jugadores.pop();
+    }
+}
+let historialJ1 = new Historial();
+historialJ1.idHist = 1;
+historialJ1.nGoles = 3;
+historialJ1.nTarjetasA = 5;
+historialJ1.nTarjetasR = 1;
+let jugador1 = new Jugador();
+jugador1.idJugador = 1;
+jugador1.edad = 18;
+jugador1.nombreJugador = "Juan";
+jugador1.pais = "Indonesia";
+jugador1.historial = historialJ1;
+let equipo1 = new Equipo();
+equipo1.id = 1;
+equipo1.nombre = "Rayo murciano";
+equipo1.dFundacion = new Date("16-03-2022");
+equipo1.jugadores[0] = jugador1;
