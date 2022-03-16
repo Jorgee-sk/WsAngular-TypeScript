@@ -169,11 +169,37 @@ let jugador1: Jugador = new Jugador()
     jugador1.pais = "Indonesia"
     jugador1.historial = historialJ1;
 
+let historialJ2: Historial = new Historial()
+    historialJ2.idHist = 2
+    historialJ2.nGoles = 24
+    historialJ2.nTarjetasA = 3
+    historialJ2.nTarjetasR = 4
+
+let jugador2: Jugador = new Jugador()
+    jugador2.idJugador = 2
+    jugador2.edad = 27
+    jugador2.nombreJugador = "Serresiete"
+    jugador2.pais = "Portugal"
+    jugador2.historial = historialJ2;
+
+
+
 let equipo1: Equipo = new Equipo()
     equipo1.id = 1;
     equipo1.nombre = "Rayo murciano";
-    equipo1.dFundacion = new Date("16-03-2022");
+    equipo1.dFundacion = new Date("16/03/2022");
     equipo1.jugadores[0] = jugador1;
+    equipo1.jugadores[1] = jugador2;
+
+console.log("Equipo 1");
+
+console.log("Id: " + equipo1.id);
+console.log("Nombre: " + equipo1.nombre);
+console.log("Fecha de fundación: " + equipo1.dFundacion);
+console.log("Jugadores del Equipo 1");
+console.log("=====================");
+console.log(equipo1.jugadores);
+
 
 
 
