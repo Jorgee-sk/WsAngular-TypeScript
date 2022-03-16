@@ -1,18 +1,18 @@
 <section id="Contact" class="sectionAboutMe">
     <div style="padding-top: 1em;" class="containerSection1 d-flex align-items-center flex-column">
-        <h1 style="text-align:center;" class="text-uppercase">Contáctame</h1>
+        <h1 style="text-align:center;" class="text-uppercase">{{contact}}</h1>
          
     </div>
     <div class="containerForm containerSection1">
         <form action="https://formspree.io/f/xdobegvj" method="POST">
       
-          <label for="nCompleto" class="text-uppercase formStyle">Nombre completo</label>
+          <label for="nCompleto" class="text-uppercase formStyle">{{name}}</label>
           <input class="inputFormFont" type="text" id="fName" name="firstname" placeholder="Tu nombre..." required>
       
-          <label for="eMail" class="text-uppercase formStyle">Tu email</label>
+          <label for="eMail" class="text-uppercase formStyle">{{email}}</label>
           <input class="inputFormFont" type="email" id="eMail" name="email" placeholder="Tu correo..." required>
       
-          <label for="message" class="text-uppercase formStyle">Mensaje</label>
+          <label for="message" class="text-uppercase formStyle">{{message}}</label>
           <textarea id="message" name="message" placeholder="Escribe algo..." style="height:100px;" required></textarea>
       
           <input style="margin: auto; display: block;" type="submit" value="Submit">
