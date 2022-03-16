@@ -7,7 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeSectionComponent implements OnInit {
 
-  constructor() { }
+  private _aboutMe:string;
+  
+  constructor() {
+    this._aboutMe = "Sobre mí"
+  }
+
+  public get aboutMe(){
+    return this._aboutMe;
+  }
+  public set aboutMe(value:string){
+    this._aboutMe = value;
+  }
 
   ngOnInit(): void {
   }

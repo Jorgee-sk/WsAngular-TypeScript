@@ -8,6 +8,7 @@ import { ProfileSectionComponent } from './profile-section/profile-section.compo
 import { FooterComponent } from './footer/footer.component';
 import { AboutMeSectionComponent } from './about-me-section/about-me-section.component';
 import { ProjectsSectionComponent } from './projects-section/projects-section.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProjectsSectionComponent } from './projects-section/projects-section.co
     ProfileSectionComponent,
     FooterComponent,
     AboutMeSectionComponent,
-    ProjectsSectionComponent
+    ProjectsSectionComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
