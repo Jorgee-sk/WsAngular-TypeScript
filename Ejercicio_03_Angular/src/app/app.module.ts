@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
 import { ProfileSectionComponent } from './profile-section/profile-section.component';
+import { FooterComponent } from './footer/footer.component';
+import { AboutMeSectionComponent } from './about-me-section/about-me-section.component';
+import { ProjectsSectionComponent } from './projects-section/projects-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CabeceraComponent,
-    ProfileSectionComponent
+    ProfileSectionComponent,
+    FooterComponent,
+    AboutMeSectionComponent,
+    ProjectsSectionComponent
   ],
   imports: [
     BrowserModule,

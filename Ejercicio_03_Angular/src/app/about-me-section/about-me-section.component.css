@@ -1,6 +1,3 @@
-.sectionPFP{
-    background-color: aquamarine;
-}
 .containerSection1{
     width: 100%;
     padding-right: var(--bs-gutter-x, 0.75rem);
@@ -8,6 +5,7 @@
     margin-right: auto;
     margin-left: auto;
 }
+
 .align-items-center {
     align-items: center !important;
 }
@@ -24,6 +22,7 @@
     margin: auto;
     text-align: center;
 }
+
 @media (min-width: 768px){
     .containerSection1 {
         max-width: 720px;
@@ -36,6 +35,7 @@
     }
     
 }
+
 .text-uppercase {
     text-transform: uppercase !important;
 }
@@ -43,18 +43,16 @@
     margin-bottom: 0 !important;
 }
 
+.textColorAqua{
+    color: rgb(40, 143, 108);
+}
+
 .textP {
     font-size: 1.25rem;
     font-weight: 300;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .subHeader{
     font-size: 1rem  !important;
-}
-.rounded-circle {
-    display: flex;
-    padding: 0%;
-    margin: 0%;
-    border:5px inset rgb(66, 138, 114);
-    border-radius: 50% !important;
 }
