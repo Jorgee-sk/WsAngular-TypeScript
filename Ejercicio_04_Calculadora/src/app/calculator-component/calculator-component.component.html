@@ -1,0 +1,19 @@
+    <h1 style="text-align: center; text-transform: uppercase;">Ejercicio calculadora</h1>
+    <div>
+        <input id="campo1" [(ngModel)]="pValor" style="margin-right: 50px;"/> 
+        <input id="campo2" [(ngModel)]="sValor"/> 
+    </div>
+  
+    <br>
+    <br>
+    <div>
+        <button  (click)="sumar()">Suma</button>
+        <button  (click)="resta()">Resta</button>
+        <button  (click)="multiplicar()">Multiplicacion</button>
+        <button  (click)="division()">Division</button>
+    </div>
+    <br>
+    <br>
+    <div>
+        <input id="campo3" type="text" [(ngModel)]="resultado"/>
+    </div>
