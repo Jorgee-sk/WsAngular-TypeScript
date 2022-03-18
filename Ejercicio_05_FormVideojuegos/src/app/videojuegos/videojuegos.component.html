@@ -1,0 +1,63 @@
+<h1>VIDEOJUEGOS</h1>
+
+<div>
+  <button (click)="insertar()" [disabled]="insertarDeshabilitado">Insertar</button>
+  <button (click)="modificar()" [disabled]="modificarBorrarDeshabilitado">Modificar</button>
+  <button (click)="borrar()" [disabled]="modificarBorrarDeshabilitado">Borrar</button>
+  <button (click)="reset()">Reset</button>
+</div>
+
+<br />
+
+<div>
+  <label for="id_videojuego">ID</label>
+  <div>
+    <input id="id_videojuego" disabled="disabled" value="{{id==0?'':id}}" />
+  </div>
+
+  <label for="titulo">Titulo</label>
+  <div>
+    <input id="titulo" [(ngModel)]="titulo" placeholder="Titulo obligatorio" />
+  </div>
+
+  <label for="company">Compañía</label>
+
+  <div>
+    <input id="company" [(ngModel)]="company" placeholder="Compañía obligatoria" />
+
+  </div>
+
+  <label for="vMedia">Valoración media</label>
+
+  <div>
+    <input id="vMedia" [(ngModel)]="vMedia" placeholder="Valoración obligatoria" />
+  </div>
+
+</div>
+
+<br />
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Titulo</th>
+        <th>Compañía</th>
+        <th>Valoración media</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let v of listaVideojuegos" (click)="seleccionar(v)">
+        <td>{{ v.id }}</td>
+        <td>{{ v.titulo }}</td>
+        <td>{{ v.company }}</td>
+        <td>{{ v.vMedia }}</td>
+      </tr>
+      <tr *ngIf="listaVideojuegos.length==0">
+        <td class="rojo" colspan="4">
+          NO HAY VIDEOJUEGOS
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
