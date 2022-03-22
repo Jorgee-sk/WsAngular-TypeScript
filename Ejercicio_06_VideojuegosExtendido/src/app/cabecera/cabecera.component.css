@@ -1,0 +1,88 @@
+.container {
+    width: 100%;
+    margin: auto;
+    background-color: #222;
+    position: fixed;
+}
+
+header{
+    background-color: #222;
+}
+
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+.logoPag{
+    float: left;
+    padding: 25px 150px;
+    color: azure;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.logoPag:hover{
+    color: rgb(167, 167, 167);
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0 50px;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    position: relative;
+}
+
+nav a{
+    color: azure;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color: rgb(167, 167, 167);
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.4rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: azure;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1250px) {
+    .toggle-button{
+        display: flex;
+    }
+    .navLink{
+        display: none;
+    }
+    .logoPag{
+        padding: 25px 80px;
+    }
+
+}
