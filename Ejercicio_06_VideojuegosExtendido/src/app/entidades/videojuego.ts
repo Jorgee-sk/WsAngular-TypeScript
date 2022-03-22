@@ -2,11 +2,12 @@ export class Videojuego{
 
     private _id : number = 0;
 
-    constructor(public id : number ,public titulo : string, public company : string, public vMedia : number){
+    constructor(public id : number ,public titulo : string, public company : string, public vMedia : number, public ruta : string){
         this._id = id;
         this.titulo = titulo;
         this.company = company;
         this.vMedia = vMedia;
+        this.ruta = ruta;
     }
 
 

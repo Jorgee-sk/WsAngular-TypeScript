@@ -14,14 +14,23 @@ export class VideojuegosEspecificosComponent implements OnInit {
   titulo: string = ""
   company: string = ""
   vMedia: number = 0;
+  ruta : string = "";
+  user : string = "";
 
-  constructor(route:ActivatedRoute) {
+  constructor(route:ActivatedRoute,private router:Router) {
 
+    this.user = route.snapshot.params["user"];
     this.id =  route.snapshot.params["id"];
     this.titulo =  route.snapshot.params["titulo"];
     this.company =  route.snapshot.params["company"];
     this.vMedia =  route.snapshot.params["vMedia"];
+    this.ruta =  route.snapshot.params["ruta"];
+  }
 
+  public routingProgramatico(){
+  
+          this.router.navigate([ '/bienvenida', this.user])
+    
   }
 
   ngOnInit() {

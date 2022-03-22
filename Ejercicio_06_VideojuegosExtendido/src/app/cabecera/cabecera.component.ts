@@ -13,12 +13,17 @@ export class CabeceraComponent implements OnInit {
   private _secondSection: string;
   private _thirdSection: string;
 
-  constructor() {
+  user : string = ""
+
+  constructor(route:ActivatedRoute) {
     this._logoHeader = "Login";
     this._firstSection = "Bienvenida";
     this._secondSection = "Sobre mí";
     this._thirdSection = "Contacto";
 
+    this.user = route.snapshot.params["username"]
+    console.log(this.user)
+    
    }
 
   public get logoHeader(){

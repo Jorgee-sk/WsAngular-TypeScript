@@ -29,7 +29,7 @@ const routes: Routes = [
     component : BienvenidaComponent
   },
   {
-    path : 'listaVideojuegos/:id/:titulo/:company/:vMedia', 
+    path : 'listaVideojuegos/:user/:id/:titulo/:company/:vMedia/:ruta', 
     component : VideojuegosEspecificosComponent
   },
   {

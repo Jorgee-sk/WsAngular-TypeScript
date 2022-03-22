@@ -6,6 +6,7 @@
         <th>Titulo</th>
         <th>Compañía</th>
         <th>Valoración media</th>
+        <th>Icono</th>
       </tr>
     </thead>
     <tbody>
@@ -14,8 +15,14 @@
         <td>{{ titulo }}</td>
         <td>{{ company }}</td>
         <td>{{ vMedia }}</td>
+        <td><img [src]="ruta"></td>
       </tr>
     </tbody>
   </table>
+  
+  
+  
 </div>
-
+<div class="container">
+    <button (click)="routingProgramatico()" [routerLink]="[ '/bienvenida', user]">Back</button>
+</div>
