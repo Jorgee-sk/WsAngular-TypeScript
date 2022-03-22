@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { LoginErrorComponent } from './login-error/login-error.component';
 import { VideojuegosEspecificosComponent } from './videojuegos-especificos/videojuegos-especificos.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
+import { ContactameComponent } from './contactame/contactame.component';
 
 const routes: Routes = [
   {
@@ -33,7 +34,7 @@ const routes: Routes = [
   },
   {
     path : 'contacto',
-    component : BienvenidaComponent
+    component : ContactameComponent
   }/*
   {path : 'bienvenida', component : BienvenidaComponent},
   {path : 'componente1/:nombre/:universo', component : Componente1Component},*/

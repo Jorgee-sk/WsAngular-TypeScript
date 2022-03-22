@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { LoginErrorComponent } from './login-error/login-error.component';
 import { VideojuegosEspecificosComponent } from './videojuegos-especificos/videojuegos-especificos.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
+import { ContactameComponent } from './contactame/contactame.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
     LoginErrorComponent,
     VideojuegosEspecificosComponent,
     SobreMiComponent,
+    ContactameComponent,
   ],
   imports: [
     BrowserModule,
