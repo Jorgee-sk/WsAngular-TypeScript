@@ -14,8 +14,8 @@ export class CabeceraComponent implements OnInit {
   private _thirdSection: string;
 
   constructor() {
-    this._logoHeader = "Inicio";
-    this._firstSection = "Videojuegos en detalle";
+    this._logoHeader = "Login";
+    this._firstSection = "Bienvenida";
     this._secondSection = "Sobre mí";
     this._thirdSection = "Contacto";
 

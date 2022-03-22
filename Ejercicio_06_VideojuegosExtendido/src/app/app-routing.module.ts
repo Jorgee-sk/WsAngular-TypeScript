@@ -25,6 +25,10 @@ const routes: Routes = [
     component : BienvenidaComponent
   },
   {
+    path : 'bienvenida', 
+    component : BienvenidaComponent
+  },
+  {
     path : 'listaVideojuegos/:id/:titulo/:company/:vMedia', 
     component : VideojuegosEspecificosComponent
   },

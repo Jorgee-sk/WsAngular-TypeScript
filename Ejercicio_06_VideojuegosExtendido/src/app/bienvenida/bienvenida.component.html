@@ -3,8 +3,8 @@
         <img width="200" height="200" src="assets/userIcon.png" alt="...">
     </div>
     <div style="padding-bottom: 2em; padding-left: 0%;" class="containerSection1 d-flex align-items-center flex-column">
-        <h1 class="text-uppercase textP1 marginBottom0">{{user}}</h1>
-        <p class="textP marginBottom0 subHeader">Login succesfully!</p>
+        <h1 class="text-uppercase textP1 marginBottom0">Bienvenido {{user}}</h1>
+        <p *ngIf="user != null" class="textP marginBottom0 subHeader">{{message}}</p>
     </div>
 </section>
 <div>

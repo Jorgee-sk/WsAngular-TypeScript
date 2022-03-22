@@ -13,6 +13,8 @@ export class BienvenidaComponent implements OnInit {
   listaVideojuegos: Videojuego[] = []
   videojuego: Videojuego | null = null
   user : string = ""
+  message : string = ""
+
 
   id: number = 0
   titulo: string = ""
@@ -29,6 +31,7 @@ export class BienvenidaComponent implements OnInit {
 
     this.user = route.snapshot.params["username"]
 
+    this.message = "Login succesfully!"
 
   }
 
