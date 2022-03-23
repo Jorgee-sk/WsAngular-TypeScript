@@ -1,4 +1,9 @@
-
+body{
+	background-image: url('fondo.jpg') !important;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed !important;
+	background-size: 100%  !important;
+}
 .container1{
 	width: 100%;
 	height: 100%;
@@ -95,4 +100,8 @@ button {
   
   .inputFormFont{
     font-family: monospace;
+  }
+
+  form{
+	  margin-bottom: 11.3%;
   }

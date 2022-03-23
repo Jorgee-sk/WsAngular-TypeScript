@@ -9,8 +9,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class LoginErrorComponent implements OnInit {
 
-  passwordError : boolean = true;
-  userError : boolean = true
+  passwordError : string;
+  userError : string;
   message : string = ""
 
   constructor(private router:Router, route:ActivatedRoute) {
@@ -19,26 +19,19 @@ export class LoginErrorComponent implements OnInit {
     this.userError = route.snapshot.params["errorUser"]
     this.passwordError = route.snapshot.params["errorPass"]
     
-    console.log(route.snapshot.params["errorUser"])
-    console.log(route.snapshot.params["errorPass"])
-    console.log(this.userError)
-    console.log(this.passwordError)
+   
 
-    if(route.snapshot.params["errorPass"] && route.snapshot.params["errorUser"]){
-      this.message = "USERNAME AND PASSWORD INVALIDS"
-    }
-    else {
-      this.message = "INVALID PASSWORD"
-    }
-
+    if(this.passwordError=="true" && this.userError=="false")
+      this.message = "INVALID PASSWORD";
+    else
+      this.message = "USERNAME AND PASSWORD ARE INVALID";
   }
 
   public routingProgramatico(){
    
           this.router.navigate([ '/login'])
-   
-    
   }
+
   ngOnInit(): void {
   }
 
