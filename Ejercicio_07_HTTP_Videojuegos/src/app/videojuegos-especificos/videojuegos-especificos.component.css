@@ -1,0 +1,26 @@
+div{
+    margin-top: 15%;
+}
+
+table, td,th{
+    margin: auto;
+    border: 1px solid;
+    text-align: center;
+    
+}
+
+img{
+    width: 128px;
+    height:128px;
+}
+
+
+
+.container {
+    margin: auto; 
+    display: block;
+    padding: 12px 45%;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+}

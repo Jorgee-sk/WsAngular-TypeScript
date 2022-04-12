@@ -1,0 +1,17 @@
+<body>
+    <div class="container1">
+        <form style="text-align: center;" method="get">
+            <fieldset class="field-class">
+                <img class="img-config" src="assets/userIcon.png" alt="...">
+                <h1 class="text-logIn">REGISTER</h1>
+                <input class="inputFormFont" type="text" name="username" [(ngModel)]="username" placeholder="Username..."/> 
+                <br>
+                <input class="inputFormFont" type="password" name="password" [(ngModel)]="password" placeholder="Password..."/> 
+                <br/>
+                <input class="inputFormFont" type="password" name="pCheck" [(ngModel)]="pCheck" placeholder="Repeat password..."/> 
+                <br/>
+                <button (click)="register()">Register</button>
+            </fieldset>
+        </form>
+    </div>
+    </body>

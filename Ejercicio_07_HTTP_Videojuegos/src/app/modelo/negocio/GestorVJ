@@ -1,0 +1,15 @@
+import { Videojuego } from "../entidades/videojuego";
+import { DaoVideojuego } from "../persistencia/DaoVideojuego";
+
+export class GestorVideojuego {
+
+    private dv: DaoVideojuego = new DaoVideojuego();
+
+    public getById(id: number): Videojuego | undefined {
+        return this.dv.getById(id)
+    }
+
+    public getAllVideojuegos(): Videojuego [] | undefined {
+        return this.dv.getAllVideojuegos();
+    }
+}
